@@ -53,9 +53,9 @@ export function AgeVerificationModal() {
             <div className="space-y-3">
               <p className="text-sm text-gray-500 mb-4">Confirmez-vous avoir 18 ans ou plus ?</p>
               <div className="flex gap-3 justify-center">
-                <Button onClick={handleYes} className="bg-green-500 hover:bg-green-600 text-white">
-                  <Link href="/">Oui, j'ai 18 ans ou plus</Link>
-                </Button>
+                <Link href="/" onClick={handleYes} className="bg-green-500 hover:bg-green-600 text-white">
+                  Oui, j'ai 18 ans ou plus
+                </Link>
                 <Button
                   onClick={handleUnderAge}
                   variant="outline"
