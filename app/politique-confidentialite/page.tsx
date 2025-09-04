@@ -212,7 +212,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="mt-4 bg-gray-50 rounded-lg p-4">
                 <p>
-                  <strong>Email :</strong> dpo@lesportenfrance.com
+                  <strong>Email :</strong> info@lesportenfrance.com
                 </p>
                 
               </div>

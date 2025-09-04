@@ -130,7 +130,7 @@ export default function AboutPage() {
             </p>
             <div className="space-y-2">
               <p>
-                <strong>Email :</strong> contact@lesportenfrance.com
+                <strong>Email :</strong> info@lesportenfrance.com
               </p>
               
             </div>

@@ -135,7 +135,7 @@ export default function CookiePolicyPage() {
                 Si vous avez des questions concernant notre utilisation des cookies, vous pouvez nous contacter à
                 l'adresse :{" "}
                 <a href="mailto:privacy@lesportenfrance.com" className="text-french-blue hover:underline">
-                  privacy@lesportenfrance.com
+                  info@lesportenfrance.com
                 </a>
               </p>
             </section>

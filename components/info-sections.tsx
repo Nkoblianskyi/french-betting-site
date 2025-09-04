@@ -70,7 +70,7 @@ export function InfoSections() {
             <p className="text-xs sm:text-sm text-gray-500">
               <strong>Jeu responsable :</strong> Le jeu peut être addictif. Jouez avec modération. Si vous ressentez le
               besoin d'aide, contactez Joueurs Info Service au 09 74 75 13 13 (appel non surtaxé) ou consultez{" "}
-              <a href="#" className="text-french-blue hover:underline">
+              <a href="https://www.joueurs-info-service.fr/" className="text-french-blue hover:underline">
                 joueurs-info-service.fr
               </a>
             </p>
