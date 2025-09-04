@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { AlertTriangle } from "lucide-react"
-import Link from "next/link"
 
 export function AgeVerificationModal() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,11 +18,14 @@ export function AgeVerificationModal() {
   }, [])
 
   const handleYes = () => {
+    console.log("[v0] User confirmed age verification")
     localStorage.setItem("age-verified", "true")
     setIsOpen(false)
+    setShowAgeQuestion(false)
   }
 
   const handleNo = () => {
+    setIsOpen(false)
     setShowAgeQuestion(true)
   }
 
@@ -34,7 +36,7 @@ export function AgeVerificationModal() {
 
   if (showAgeQuestion) {
     return (
-      <Dialog open={true} onOpenChange={() => {}}>
+      <Dialog open={showAgeQuestion} onOpenChange={setShowAgeQuestion}>
         <DialogContent className="sm:max-w-md" hideClose>
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2 text-french-red">
@@ -53,9 +55,9 @@ export function AgeVerificationModal() {
             <div className="space-y-3">
               <p className="text-sm text-gray-500 mb-4">Confirmez-vous avoir 18 ans ou plus ?</p>
               <div className="flex gap-3 justify-center">
-                <Link href="/" onClick={handleYes} className="bg-green-500 hover:bg-green-600 text-white">
+                <Button onClick={handleYes} className="bg-green-500 hover:bg-green-600 text-white">
                   Oui, j'ai 18 ans ou plus
-                </Link>
+                </Button>
                 <Button
                   onClick={handleUnderAge}
                   variant="outline"
