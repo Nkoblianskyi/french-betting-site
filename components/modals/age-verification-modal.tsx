@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { AlertTriangle } from "lucide-react"
+import Link from "next/link"
 
 export function AgeVerificationModal() {
   const [isOpen, setIsOpen] = useState(false)
@@ -53,7 +54,7 @@ export function AgeVerificationModal() {
               <p className="text-sm text-gray-500 mb-4">Confirmez-vous avoir 18 ans ou plus ?</p>
               <div className="flex gap-3 justify-center">
                 <Button onClick={handleYes} className="bg-green-500 hover:bg-green-600 text-white">
-                  Oui, j'ai 18 ans ou plus
+                  <Link href="/">Oui, j'ai 18 ans ou plus</Link>
                 </Button>
                 <Button
                   onClick={handleUnderAge}
